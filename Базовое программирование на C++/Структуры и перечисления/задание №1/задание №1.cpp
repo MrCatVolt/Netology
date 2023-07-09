@@ -1,62 +1,75 @@
 ﻿#include <iostream>
-#include <string>
-#include <Windows.h>
-enum month {
-    досвидание,
-    январь,
-    февраль,
-    март,
-    апрель,
-    май,
-    июнь,
-    июль,
-    август,
-    сентябрь,
-    октябрь,
-    ноябрь,
-    декабрь
+
+enum class Months {
+    Jan = 1,
+    Feb,
+    Marth,
+    April,
+    May,
+    June,
+    Jule,
+    Aug,
+    Sep,
+    Oct,
+    Nov,
+    Dec
 };
 
-
-int main()
-{
+int main(int argc, char** atgv) {
     setlocale(LC_ALL, "Russian");
-    int a = 0, b = 0;
-    std::string c;
-    std::cout << "Введите номер месяца:\n";
-    std::cin >> a;
-  
-    switch (a) {
-    case 0:std::cout << "досвидание\n";
-        break;
-    case 1:std::cout << "январь\n";
-        break;
-    case 2:std::cout << "февраль\n";
-        break;
-    case 3:std::cout << "март\n";
-        break;
-    case 4:std::cout << "апрель\n";
-        break;
-    case 5:std::cout << "май\n";
-        break;
-    case 6:std::cout << "июнь\n";
-        break;
-    case 7:std::cout << "июль\n";
-        break;
-    case 8:std::cout << "август\n";
-        break;
-    case 9:std::cout << "сентябрь\n";
-        break;
-    case 10:std::cout << "октябрь\n";
-        break;
-    case 11:std::cout << "ноябрь\n";
-        break;
-    case 12:std::cout << "декабрь\n";
-        break;
-    default :std::cout << "такого месяца нет\n";
-        break;
+    int m1;
+
+    do {
+
+        std::cout << "введите номер месяца: ";
+        std::cin >> m1;
+        Months m = static_cast<Months>(m1);
+
+        switch (m) {
+        case Months::Jan:
+            std::cout << "Январь" << std::endl;
+            break;
+        case Months::Feb:
+            std::cout << "Февраль" << std::endl;
+            break;
+        case Months::Marth:
+            std::cout << "Март" << std::endl;
+            break;
+        case Months::April:
+            std::cout << "Апрель" << std::endl;
+            break;
+        case Months::May:
+            std::cout << "Май" << std::endl;
+            break;
+        case Months::June:
+            std::cout << "Июнь" << std::endl;
+            break;
+        case Months::Jule:
+            std::cout << "Июль" << std::endl;
+            break;
+        case Months::Aug:
+            std::cout << "Август" << std::endl;
+            break;
+        case Months::Sep:
+            std::cout << "Сентябрь" << std::endl;
+            break;
+        case Months::Oct:
+            std::cout << "Октябрь" << std::endl;
+            break;
+        case Months::Nov:
+            std::cout << "Ноябрь" << std::endl;
+            break;
+        case Months::Dec:
+            std::cout << "Декабрь" << std::endl;
+            break;
+        }
+    } while (m1 > 0 && m1 < 13);
+
+    if (m1 > 12 || m1 < 0) {
+        std::cout << "Не правильный номер";
     }
-
+    if (m1 == 0) {
+        std::cout << "До свидания!";
+        return 0;
+    }
 }
-
-

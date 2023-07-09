@@ -2,12 +2,18 @@
 #include <string>
 #include <Windows.h>
 
-
 struct check {
     int nomber_check;
         std::string name;
         double balance = 0;
 };
+
+int new_check(int c, check& num1) {
+    std::cout << "Введите новый баланс:\n";
+    std::cin >> c;
+    num1.balance = c;
+    return c;
+}
 
 int main()
 {
@@ -25,10 +31,6 @@ int main()
 
     check num1 = { a,b,c };
     std::cout << num1.nomber_check << " " << num1.name << " " << num1.balance << "\n";
-
-    std::cout << "Введите новый баланс:\n";
-    std::cin >> c;
-    num1.balance = c;
-
+    new_check(c, num1);
     std::cout << "Ваш новый счет:" << num1.nomber_check << " " << num1.name << " " << num1.balance;
 }

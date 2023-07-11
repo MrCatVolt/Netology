@@ -8,12 +8,13 @@ private:
     int x;
 
 public:
-    Counter (){
-        x = 1;
-    }
 
     Counter (int x) {
         this->x = x;
+    }
+
+    Counter (){
+        x = 1;
     }
 
     void set_x_on1() {
@@ -33,17 +34,12 @@ public:
 
 
 
-
-
-
-
-
 int main()
 {
     setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
     int a = 0;
-    std::string b;
-    char c;
+    std::string c, b;
     
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет:\n";
     std::cin >> b;
@@ -51,34 +47,29 @@ int main()
     if (b == "да") {
         std::cout << "Введите начальное значение счётчика:\n";
         std::cin >> a;
-        Counter z(a);
-    }
-    else {
-        Counter z();
     }
 
+    Counter* z;
+
+    (b == "да") ? (z = new Counter(a)) : (z = new Counter());
 
     int i = 0;
     while (i==0) {
         std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
         std::cin >> c;
-        char d = '+', d2 = '-', d3 = '=', d4 = 'x';
-
-
-        if (c == d) {
-            z.set_x_on1();
+       
+        if (c == "+") {
+            z->set_x_on1();
         }
-        if (c == d2) {
-            z.set_x_off1();
+        if (c == "-") {
+            z->set_x_off1();
         }
-        if (c == d3) {
-            z.get_x_cout();
-            std::cout << "\n" << z.get_x_cout() << "\n";
+        if (c == "=") {
+            z->get_x_cout();
         }
-        if (c == d4) {
+        if (c == "x") {
             std::cout << "До свидания!";
             break;
         }
     }
 }
-

@@ -26,7 +26,7 @@ public:
     }
 
     int get_x_cout() {
-        std::cout << "\n" << x << "\n";
+        std::cout << x << "\n";
         return x;
     }
 
@@ -53,8 +53,7 @@ int main()
 
     (b == "да") ? (z = new Counter(a)) : (z = new Counter());
 
-    int i = 0;
-    while (i==0) {
+    for (;;) {
         std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
         std::cin >> c;
        
@@ -72,4 +71,5 @@ int main()
             break;
         }
     }
+    delete z;
 }

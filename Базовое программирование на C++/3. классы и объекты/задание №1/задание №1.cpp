@@ -1,49 +1,46 @@
 ﻿#include <iostream>
 
 class Calculator {
-public:
-    double num1;
-    double num2;
+private:
+double num1;
+double num2;
 
-    double add(double num1, double num2) {
+public:
+
+
+    double get_add() {
         double x=0;
         x = num1 + num2;
-        std::cout << "num1 + num2 = " << x << "\n";
         return x;
     }
 
-    double multiply (double num1, double num2) {
+    double get_multiply () {
         double x = 0;
         x = num1 * num2;
-        std::cout << "num1 * num2 = " << x << "\n";
         return x;
     }
 
-    double subtract_1_2(double num1, double num2) {
+    double get_subtract_1_2() {
         double x = 0;
         x = num1 - num2;
-        std::cout << "num1 - num2 = " << x << "\n";
         return x;
     }
 
-    double subtract_2_1(double num1, double num2) {
+    double get_subtract_2_1() {
         double x = 0;
         x = num2 - num1;
-        std::cout << "num2 - num1 = " << x << "\n";
         return x;
     }
 
-    double divide_1_2(double num1, double num2) {
+    double get_divide_1_2() {
         double x = 0;
         x = num1 / num2;
-        std::cout << "num1 / num2 = " << x << "\n";
         return x;
     }
 
-    double divide_2_1(double num1, double num2) {
+    double get_divide_2_1() {
         double x = 0;
         x = num2 / num1;
-        std::cout << "num2 / num1 = " << x << "\n";
         return x;
     }
 
@@ -73,33 +70,26 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     double a = 0, b = 0;
-    int i = 5;
-    while (i == 5) {
+    for (;;) {
                 
-        std::cout << "\n\nвведите num1:\n";
+        std::cout << "введите num1: ";
         std::cin >> a;
 
-        std::cout << "введите num2:\n";
+        std::cout << "введите num2: ";
         std::cin >> b;
 
-        Calculator Calculator;
-        Calculator.set_num1(a);
-        Calculator.set_num2(b);
-        
-
-
-        if (Calculator.set_num1(a) == 0 || Calculator.set_num2(b) == 0) {
-            std::cout << "Неверный ввод!\n";
+        Calculator calc;
+       
+        if (calc.set_num1(a) == 0 || calc.set_num2(b) == 0) {
+            std::cout << "Неверный ввод!\n\n";
         }
         else {
-            Calculator.add(a, b);
-            Calculator.multiply(a, b);
-            Calculator.subtract_1_2(a, b);
-            Calculator.subtract_2_1(a, b);
-            Calculator.divide_1_2(a, b);
-            Calculator.divide_2_1(a, b);
+            std::cout << "num1 + num2 = " << calc.get_add() << "\n";
+            std::cout << "num1 * num2 = " << calc.get_multiply() << "\n";
+            std::cout << "num1 - num2 = " << calc.get_subtract_1_2() << "\n";
+            std::cout << "num2 - num1 = " << calc.get_subtract_2_1() << "\n";
+            std::cout << "num1 / num2 = " << calc.get_divide_1_2() << "\n";
+            std::cout << "num2 / num1 = " << calc.get_divide_2_1() << "\n\n";
         }
     }
 }
-
-

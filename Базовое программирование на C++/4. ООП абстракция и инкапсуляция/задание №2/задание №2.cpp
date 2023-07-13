@@ -35,7 +35,7 @@ public:
         return x2;
     }
 
-    void set_convert(Addresses A, Addresses B) { // сравнение городов и замена функций.
+    void set_convert(Addresses & A, Addresses & B) { // сравнение городов и замена функций.
         std::string c1, c2;
         int c3, c4;
 

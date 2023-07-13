@@ -67,13 +67,13 @@ int main()
     
     Addresses** A = new Addresses* [a];
 
-    for (int i = 0; i < a; i++) { // считываем файл в экземпляр класса
+    for (int i = 0; i < a-1; i++) { // считываем файл в экземпляр класса
         std::string b1, b2, b3, b4;
         int b5=0, b6=0;
         book >> b1 >> b2 >> b3 >> b4;
 
-        b5= a[i].converting (b3);
-        b6= A[i].converting(b4);
+        b5= A[i][i].converting(b3);
+        b6= A[i][i].converting(b4);
 
         A[i] = new Addresses (b1, b2, b5, b6);
        //A[i].set_init(b1, b2, b5, b6);
@@ -82,10 +82,10 @@ int main()
 
     std::ofstream book_off("out.txt"); //работаем на передачу в файл
     book_off << a << "\n";
-    for (int i = a-1; i > -1; i--) {
-        book_off << A[i].get_sity() << ", " << A[i].get_street() << ", " << A[i].get_num_home() << ", "
-            << A[i].get_num_apartments() << "\n";
-        //std::cout << A[i].get_sity() << ", " << A[i].get_street() << ", " << A[i].get_num_home() << ", " << A[i].get_num_apartments() << "\n";
+    for (int i = a; i > 1; i--) {
+        book_off << A[i][i].get_sity() << ", " << A[i][i].get_street() << ", " << A[i][i].get_num_home() << ", "
+            << A[i][i].get_num_apartments() << "\n";
+        std::cout << A[i][i].get_sity() << ", " << A[i][i].get_street() << ", " << A[i][i].get_num_home() << ", " << A[i][i].get_num_apartments() << "\n";
     }
 
     delete []A;

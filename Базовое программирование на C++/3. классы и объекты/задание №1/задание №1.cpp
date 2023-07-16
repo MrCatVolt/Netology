@@ -70,6 +70,8 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     double a = 0, b = 0;
+Calculator calc;
+
     for (;;) {
                 
         std::cout << "введите num1: ";
@@ -78,7 +80,7 @@ int main()
         std::cout << "введите num2: ";
         std::cin >> b;
 
-        Calculator calc;
+        
        
         if (calc.set_num1(a) == 0 || calc.set_num2(b) == 0) {
             std::cout << "Неверный ввод!\n\n";

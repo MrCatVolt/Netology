@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿/*#include <iostream>
 #include <string>
 
 class Figure
@@ -115,3 +115,4 @@ int main()
 
 
 }
+*/

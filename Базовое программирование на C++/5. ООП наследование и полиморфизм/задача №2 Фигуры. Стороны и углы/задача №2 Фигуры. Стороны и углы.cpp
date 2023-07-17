@@ -3,24 +3,23 @@
 
 
 class Figure {
-
-protected:
-    std::string name;
-    int A, B, C, D;
-    double a, b, c, d;
-
+  
 public:
-    Figure() {};
-    Figure(std::string name, int A, int B, int C, double a, double b, double c) {};
+    //Figure() {};
+    //Figure(std::string name, int A, int B, int C, double a, double b, double c) {};
 
     virtual void get_sides_count() {
-        std::cout << "\n" << name << "\n";
+        std::cout << "\n500\n";
     }
 };
 
 
 class Trigl :public Figure
 {
+protected:
+    std::string name;
+    int A, B, C;
+    double a, b, c;
 public:
     Trigl(std::string name, int A, int B, int C, double a, double b, double c) {
         this->name = name;
@@ -60,6 +59,10 @@ public:
 
 class Quadr :public Figure
 {
+protected:
+    std::string name;
+    int A, B, C, D;
+    double a, b, c, d;
 public:
     Quadr(std::string name, int A, int B, int C, int D, double a, double b, double c, double d) {
         this->name = name;

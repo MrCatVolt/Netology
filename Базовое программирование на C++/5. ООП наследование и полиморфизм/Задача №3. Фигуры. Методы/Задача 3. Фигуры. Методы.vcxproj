@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d6a60d32-bf4d-4ca0-8980-bca242b85adb}</ProjectGuid>
-    <RootNamespace>задача2ФигурыСтороныиуглы</RootNamespace>
+    <ProjectGuid>{e82e1820-8713-4afb-8e23-adba87e32f6f}</ProjectGuid>
+    <RootNamespace>Задача3ФигурыМетоды</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="задача №2 Фигуры. Стороны и углы.cpp" />
+    <ClCompile Include="Задача 3. Фигуры. Методы.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

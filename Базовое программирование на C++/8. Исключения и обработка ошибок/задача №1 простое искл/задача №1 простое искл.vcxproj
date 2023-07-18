@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{97a2c7e7-0007-4383-a701-a7a26a074ffa}</ProjectGuid>
-    <RootNamespace>задача1простоеисключение</RootNamespace>
+    <ProjectGuid>{0d6a2281-eb2b-45f0-98cb-e3b8de7777e6}</ProjectGuid>
+    <RootNamespace>задача1простоеискл</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="задача №1 простое исключение.cpp" />
+    <ClCompile Include="задача №1 простое искл.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,10 +6,10 @@ int function(std::string str, int forbidden_length) {
 
 
 	int d = str.length(); // тут добавить подсчёт символов в строке.
-//int z = strlen(str);
+	//int z = strlen(str);
 
 	if (d == forbidden_length) {
-		throw std::runtime_error ("Вы ввели слово запретной длины! До свидания");
+		throw std::runtime_error("Вы ввели слово запретной длины! До свидания");
 	}
 
 	return d;
@@ -48,6 +48,6 @@ int main()
 			break;
 		}
 	}
-	
+
 
 }

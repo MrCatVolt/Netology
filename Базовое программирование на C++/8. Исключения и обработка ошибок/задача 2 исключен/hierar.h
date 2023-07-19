@@ -13,6 +13,7 @@ public:
     Figure();
     Figure(std::string name, int A, int B, int C, double a, double b, double c);
 
+    virtual void get_sides_correct();
     virtual void get_sides_count();
 };
 
@@ -30,19 +31,19 @@ public:
 
 class regtag_Trigl : public Trigl {
 public:
-    regtag_Trigl(std::string name, int A, int B, int C, double a, double b);
+    regtag_Trigl(std::string name, int A, int B, int C, double a, double b, double d);
 };
 
 
 
 class isos_Trigl : public Trigl {
 public:
-    isos_Trigl(std::string name, int A, int B, double a, double b);
+    isos_Trigl(std::string name, int A, int B, int C, double a, double b, double d);
 };
 
 class teral_Trigl : public Trigl {
 public:
-    teral_Trigl(std::string name, int A);
+    teral_Trigl(std::string name, int A, int B, int C, double a, double b, double d);
 };
 
 
@@ -50,7 +51,7 @@ class Quadr :public Figure
 {
 public:
     Quadr(std::string name, int A, int B, int C, int D, double a, double b, double c, double d);
-
+    void get_sides_correct() override;
     void get_sides_count() override;
 };
 
@@ -58,17 +59,17 @@ public:
 
 class rectangle : public Quadr {
 public:
-    rectangle(std::string name, int A, int B);
+    rectangle(std::string name, int A, int B, int C, int D, double a, double b, double c, double d);
 };
 
 
 class parallelogram : public Quadr {
 public:
-    parallelogram(std::string name, int A, int B, double a, double b);
+    parallelogram(std::string name, int A, int B, int C, int D, double a, double b, double c, double d);
 };
 
 class rhombus : public Quadr {
 public:
-    rhombus(std::string name, int A, double a, double b);
+    rhombus(std::string name, int A, int B, int C, int D, double a, double b, double c, double d);
 };
 

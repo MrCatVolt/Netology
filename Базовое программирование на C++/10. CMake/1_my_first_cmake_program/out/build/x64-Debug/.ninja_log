@@ -1,0 +1,5 @@
+# ninja log v5
+23	986	7114991183776872	CMakeFiles/my_first_cmake_program.dir/1_my_first_cmake_program.cpp.obj	e8c48afed18e6042
+987	1553	7114991186487644	my_first_cmake_program.exe	25c894db23bcef5a
+13	1921	7114996158171642	CMakeFiles/my_first_cmake_program.dir/1_my_first_cmake_program.cpp.obj	e8c48afed18e6042
+1922	2788	7114996164890157	my_first_cmake_program.exe	25c894db23bcef5a

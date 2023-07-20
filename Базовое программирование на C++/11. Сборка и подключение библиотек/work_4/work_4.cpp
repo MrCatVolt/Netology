@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 #include <Windows.h>
 #include <string>
-#include "lib_dinamic_work_2.h"
+#include "lib_dinamic_work_4.h"
 
-//add_library(my_lib_work_unical SHARED  lib_dinamic_work_2.h lib_dinamic_work_2.cpp)
+
 
 int main()
 {
@@ -15,8 +15,8 @@ int main()
 
     std::cin >> name;
 
-    lib_dinamic_work_2::Leaver z10;
-    z1 = z10.leave(name);
+    lib_work_4::Leaver z5;
+    z1 = z5.leave(name);
 
     std::cout << z1;
 

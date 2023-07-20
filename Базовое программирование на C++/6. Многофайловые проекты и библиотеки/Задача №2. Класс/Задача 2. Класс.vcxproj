@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="my_Counter.cpp" />
+    <ClCompile Include="Counter.cpp" />
     <ClCompile Include="Задача 2. Класс.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="my_Counter.h" />
+    <ClInclude Include="Counter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

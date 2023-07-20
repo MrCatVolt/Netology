@@ -1,6 +1,17 @@
 ﻿#include <iostream>
 #include <string>
-#include "hierar.h"
+
+#include "Figure.h"
+#include "Trigl.h"
+#include "regtag_Trigl.h"
+#include "isos_Trigl.h"
+#include "teral_Trigl.h"
+
+#include "Quadr.h"
+#include "rectangle.h"
+#include "rhombus.h"
+#include "parallelogram.h"
+
 
 /*class Figure {
 

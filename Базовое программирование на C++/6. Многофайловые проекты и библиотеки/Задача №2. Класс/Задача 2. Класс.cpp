@@ -2,7 +2,7 @@
 #include <string>
 #include <cstring>
 #include <Windows.h>
-#include "my_Counter.h"
+#include "Counter.h"
 
 int main()
 {

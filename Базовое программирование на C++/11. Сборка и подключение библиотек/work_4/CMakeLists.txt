@@ -6,6 +6,7 @@ add_executable(my_work_4_unicalname work_4.cpp)
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-add_library(my_unical_name SHARED  lib_dinamic_work_4.h lib_dinamic_work_4.cpp)
+
+add_library(my_unical_name SHARED "my_lib_work_4" lib_dinamic_work_4.h lib_dinamic_work_4.cpp)
 
 target_link_libraries(my_work_4_unicalname my_unical_name)

@@ -136,4 +136,6 @@ int main()
     Figure* z16 = &z15;
     z16->get_sides_count();
 
+    system("pause");
+
 }

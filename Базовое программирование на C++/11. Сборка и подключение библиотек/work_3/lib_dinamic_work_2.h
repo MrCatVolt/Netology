@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 
 
@@ -8,7 +7,7 @@
 #else
 #define MATHPOWERLIBRARY_API __declspec(dllimport)
 #endif
-namespace lib_work_4
+namespace lib_dinamic_work_2
 {
 	class Leaver
 	{

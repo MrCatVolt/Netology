@@ -1,2 +1,0 @@
-C:/Users/Евгений/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_4/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Евгений/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_4/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

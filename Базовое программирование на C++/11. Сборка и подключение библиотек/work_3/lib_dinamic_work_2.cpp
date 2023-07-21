@@ -1,8 +1,8 @@
 #include <string>
-#include "lib_dinamic_work_4.h"
+#include "lib_dinamic_work_2.h"
 
 
-namespace lib_work_4 {
+namespace lib_dinamic_work_2 {
 
 	std::string Leaver::leave(std::string z) {
 		std::string z2 = ("До свидания, " + z + " !\n");

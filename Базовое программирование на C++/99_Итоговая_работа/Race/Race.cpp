@@ -2,6 +2,8 @@
 #include <string>
 #include <Windows.h>
 
+// инструкция компилятору привести double к int
+// ival = static_cast<int>(3.541) + 3;
 
 
 class ground {
@@ -26,11 +28,14 @@ public:
         z = y / time_to_out;
 
         if (z == 0) {
-            return x = y;
+            x = y;
+            static_cast <double> (x);
+            return x;
         }
 
         else if (z == 1) {
             x = y + time_out_1;
+            static_cast <double> (x);
             return x;
        }
 
@@ -40,7 +45,7 @@ public:
             for (int i = 1; i < z; i++) {
                 x += time_out_all;
             }
-
+            static_cast <double> (x);
             return x;
         }
         return 0;
@@ -87,8 +92,8 @@ int main()
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
 
-    int nom_rice_tipe = 0, long_distance = 0, a = 0, b = 0, c = 0, d = 0, e = 0;
-
+    int nom_rice_tipe = 0, long_distance = 0, a = 0, b = 0, d = 0, e = 0;
+    double c = 0;
 
 
 
@@ -105,7 +110,7 @@ int main()
                 "Выберите тип гонки: ";
             std::cin >> nom_rice_tipe;
             std::cout << "\n";
-        } while (b == 0 || nom_rice_tipe > 3);
+        } while (nom_rice_tipe == 0 || nom_rice_tipe > 3);
 
         do {
             std::cout << "Укажите длинну дистанции (должна быть положительна): ";
@@ -116,7 +121,7 @@ int main()
         camel zero;
         c = zero.funk_camel(long_distance);
         
-     
+        std::cout << c;
 
     }
   

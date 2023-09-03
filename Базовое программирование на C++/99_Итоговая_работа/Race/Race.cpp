@@ -284,13 +284,6 @@ public:
 
 
 
-
-
-
-
-
-int main()
-{
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
     

@@ -1,11 +1,13 @@
 ﻿#include <iostream>
 #include <string>
 #include <Windows.h>
+#include "dinam_lib_Race.h"
+
 
 // инструкция компилятору привести double к int
 // ival = static_cast<int>(3.541) + 3;
 
-
+/*
 class ground {
 public:
     int speed;
@@ -281,8 +283,10 @@ public:
 
 };
 
+*/
 
 
+int main() {
 
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
@@ -451,43 +455,43 @@ public:
 
         for (int i = 1; i < 10; ++i) {
                     if (mass[i] == 1) {
-                        camel z1;
+                        dinam_lib_Race::camel z1;
                         mas_time[i] = z1.funk_camel(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 2) {
-                        camel_speedboat z2;
+                        dinam_lib_Race::camel_speedboat z2;
                         mas_time[i] = z2.funk_camel_speedboat(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 3) {
-                        centaur z3;
+                        dinam_lib_Race::centaur z3;
                         mas_time[i] = z3.funk_centaur(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 4) {
-                        all_terrain_boots z4;
+                        dinam_lib_Race::all_terrain_boots z4;
                         mas_time[i] = z4.funk_all_terrain_boots(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 5) {
-                        eagle z5;
+                        dinam_lib_Race::eagle z5;
                         mas_time[i] = z5.funk_eagle(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 6) {
-                        broom z6;
+                        dinam_lib_Race::broom z6;
                         mas_time[i] = z6.funk_broom(long_distance);
                         ++sum;
                     }
 
                     else if (mass[i] == 7) {
-                        Magic_carpet z7;
+                        dinam_lib_Race::Magic_carpet z7;
                         mas_time[i] = z7.funk_Magic_carpet(long_distance);
                         ++sum;
                     }

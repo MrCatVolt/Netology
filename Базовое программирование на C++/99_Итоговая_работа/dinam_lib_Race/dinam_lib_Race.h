@@ -23,46 +23,46 @@ namespace dinam_lib_Race
 
 	class camel : public ground {   // ÂÅÐÁËÞÄ
 	public:
-		camel() {
+        MATHPOWERLIBRARY_API camel() {
 			this->speed = 10;
 			this->time_to_out = 30;
 		}
 
-		MATHPOWERLIBRARY_API double funk_camel(int long_distance);
+		 double MATHPOWERLIBRARY_API funk_camel(int long_distance);
 	};
 
 
     class camel_speedboat : public ground {   // âåðáëþä áûñòðîõîä
     public:
-        camel_speedboat() {
+        MATHPOWERLIBRARY_API camel_speedboat() {
             this->speed = 40;
             this->time_to_out = 10;
         }
 
-		MATHPOWERLIBRARY_API double funk_camel_speedboat(int long_distance);
+		 double MATHPOWERLIBRARY_API funk_camel_speedboat(int long_distance);
 
     };
 
 	class centaur : public ground {   // ÊÅÍÒÀÂÐ
 	public:
-		centaur() {
+        MATHPOWERLIBRARY_API centaur() {
 			this->speed = 15;
 			this->time_to_out = 8;
 		}
 
-		MATHPOWERLIBRARY_API double funk_centaur(int long_distance);
+		 double MATHPOWERLIBRARY_API funk_centaur(int long_distance);
 
 	};
 
 
     class all_terrain_boots : public ground {   // ÁÎÒÈÍÊÈ-ÂÅÇÄÅÕÎÄÛ
     public:
-        all_terrain_boots() {
+        MATHPOWERLIBRARY_API all_terrain_boots() {
             this->speed = 6;
             this->time_to_out = 60;
         }
 
-		double funk_all_terrain_boots(int long_distance);
+		double MATHPOWERLIBRARY_API funk_all_terrain_boots(int long_distance);
     };
 
 
@@ -74,22 +74,22 @@ namespace dinam_lib_Race
 
     class eagle : public air {   // ÎÐ¨Ë
     public:
-        eagle() {
+        MATHPOWERLIBRARY_API eagle() {
             this->speed = 8;
         }
 
-        double funk_eagle(int long_distance);
+        double MATHPOWERLIBRARY_API funk_eagle(int long_distance);
 
     };
 
 
     class broom : public air {   // ÌÅÒËÀ
     public:
-        broom() {
+        MATHPOWERLIBRARY_API broom() {
             this->speed = 20;
         }
 
-        double funk_broom(int long_distance);
+        double MATHPOWERLIBRARY_API funk_broom(int long_distance);
 
     };
 
@@ -97,11 +97,11 @@ namespace dinam_lib_Race
 
     class Magic_carpet : public air {   // ÊÎÂ¨Ð-ÑÀÌÎË¨Ò
     public:
-        Magic_carpet() {
+        MATHPOWERLIBRARY_API Magic_carpet() {
             this->speed = 10;
         }
 
-        double funk_Magic_carpet(int long_distance);
+        double MATHPOWERLIBRARY_API funk_Magic_carpet(int long_distance);
 
     };
 

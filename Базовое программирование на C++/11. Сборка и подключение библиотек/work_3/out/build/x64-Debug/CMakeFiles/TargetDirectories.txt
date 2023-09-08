@@ -1,4 +1,0 @@
-C:/Users/mrcat/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_3/out/build/x64-Debug/CMakeFiles/my_lib_work_3.dir
-C:/Users/mrcat/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_3/out/build/x64-Debug/CMakeFiles/my_lib_work_unical.dir
-C:/Users/mrcat/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_3/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/mrcat/Desktop/Netology/Базовое программирование на C++/11. Сборка и подключение библиотек/work_3/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

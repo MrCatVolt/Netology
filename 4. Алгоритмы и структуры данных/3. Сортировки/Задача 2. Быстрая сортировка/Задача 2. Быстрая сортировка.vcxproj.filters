@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="задание 1 Сортировка слиянием.cpp">
+    <ClCompile Include="Задача 2. Быстрая сортировка.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5dc2c4c8-e0b4-4c68-867d-759a10f7f9dd}</ProjectGuid>
-    <RootNamespace>задание1Сортировкаслиянием</RootNamespace>
+    <ProjectGuid>{01e5d32b-2fe8-4f12-9c73-b4601b4c3485}</ProjectGuid>
+    <RootNamespace>Задача3Сортировкаподсчётом</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="задание 1 Сортировка слиянием.cpp" />
+    <ClCompile Include="Задача 3. Сортировка подсчётом.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

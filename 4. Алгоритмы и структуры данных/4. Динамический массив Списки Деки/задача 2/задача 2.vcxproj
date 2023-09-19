@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{536ca764-9156-47b5-94e5-0bef55593c01}</ProjectGuid>
-    <RootNamespace>Задача2Добавлениевизменяемыйдинамическиймассив</RootNamespace>
+    <ProjectGuid>{dd36a908-d53d-4cd5-aa00-d8da515e5792}</ProjectGuid>
+    <RootNamespace>задача2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Задача 2. Добавление в изменяемый динамический массив.cpp" />
+    <ClCompile Include="задача 2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

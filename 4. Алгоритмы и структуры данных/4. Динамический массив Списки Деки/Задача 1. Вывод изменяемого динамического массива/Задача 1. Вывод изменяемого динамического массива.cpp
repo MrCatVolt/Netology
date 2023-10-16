@@ -30,18 +30,18 @@ int main()
     std::cout << "Введите логический размер массива: ";
     std::cin >> b;
     
-    try { b > a; }
+    if (b > a) {
+        std::cout << "Ошибка! Логический размер массива не может превышать фактический!";
+     }
+    else {
+        int* mas = new int[a];
 
-    catch (int a){ std::cout << "Ошибка! Логический размер массива не может превышать фактический!"; }
+        while (c < b) {
+            std::cout << "Введите mas" << "[" << c << "]: ";
+            std::cin >> mas[c];
+            ++c;
+        }
 
-    int* mas = new int[a];
-
-    while (c < b) {
-        std::cout << "Введите mas"<< "["<<c<<"]: ";
-        std::cin >> mas[c];
-        ++c;
+        print_dynamic_array(mas, a, b);
     }
-
-    print_dynamic_array(mas, a, b);
-
 }

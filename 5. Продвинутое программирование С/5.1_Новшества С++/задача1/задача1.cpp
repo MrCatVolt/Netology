@@ -14,20 +14,27 @@ int main()
     std::cout << "Hello World!\n";
     std::vector<int> v = { 8, 4, 5, 9 };
 
-     auto f{ [](int& a) -> int {
-         a = a * 3;
-         return a;
-     }
-     };
+ 
+    std::for_each(v.begin(), v.end(), [](int& n) { 
+        
+        int t = n % 2;
+        if (t == 1) {
+            n = n * 3;
+            return n;
+        }
 
-    for (int& n : v) {
-      f(n);
-    };
+        else {
+            return n;
+        }
+        
+        });
 
 
 
-    // Выводим вектор на экран
-    for (int n : v) {
+    std::for_each(v.begin(), v.end(), [](int& n) {// Выводим вектор на экран
         std::cout << n << ' ';
-    }
+        });
+    
+    //for (int n : v) {
+     //   std::cout << n << ' ';}
 }

@@ -36,7 +36,7 @@ int main()
 
     bool is_nom = std::holds_alternative <int>(take_result);
     bool is_str = std::holds_alternative <std::string>(take_result);
-     //bool is_vek = std::holds_alternative <std::vector>(take_result); // std::holds_alternative - не умеет проверять вектора?
+     //bool is_vek = std::holds_alternative <std::vector>(take_result); // std::holds_alternative - не умеет сравнивать вектора?
 
 
 
